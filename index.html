@@ -2,37 +2,36 @@
 layout: default
 ---
 
-<section class="mw8-ns center cf w-100 pa2-ns">
-  <a href="http://www.ecole-journalisme.ch/geneve/" class="link black">
-    <article class="w-100 w-50-ns center fl pa2-ns">
-      <img src="/img/educasuisse-ecoledejournalisme.jpg" class="db w-100" alt="École de journalisme">
-      <div class="ph2 ph0-ns pb3">
-        <h1 class="f5 f4-ns mb0">École de journalisme</h1>
+<main class="mw8-ns center pa3 ph5-ns lh-copy">
+
+  <h1>Contact</h1>
+
+  <p>N'hésitez pas à nous contacter pour toute information!</p>
+
+  <form action="/contact/index.php" method="POST" accept-charset="utf-8">
+    <fieldset id="form-message" class="ba b--transparent ph0 mh0">
+      <div class="mt3">
+        <label class="db fw4 lh-copy f6" for="name">Nom, Prénom</label>
+        <input class="pa2 input-reset ba bg-transparent w-100" type="text" name="name" id="name" required>
       </div>
-    </article>
-  </a>
-  <a href="http://www.ecole-cinema.ch/" class="link black">
-    <article class="w-100 w-50-ns center fl pa2-ns">
-      <img src="/img/educasuisse-ecoledecinema.jpg" class="db w-100" alt="École de cinéma">
-      <div class="ph2 ph0-ns pb3">
-        <h1 class="f5 f4-ns mb0">École de cinéma</h1>
+      <div class="mt3">
+        <label class="db fw4 lh-copy f6" for="email">E-mail</label>
+        <input class="pa2 input-reset ba bg-transparent w-100" type="email" name="email" id="email" required>
       </div>
-    </article>
-  </a>
-  <a href="http://www.gazette-geneve.ch/" class="link black">
-    <article class="w-100 w-50-ns center fl pa2-ns">
-      <img src="/img/educasuisse-lagazettedegeneve.jpg" class="db w-100" alt="La gazette de Genève">
-      <div class="ph2 ph0-ns pb3">
-        <h1 class="f5 f4-ns mb0">Gazette</h1>
+      <div class="mt3">
+        <label class="db fw4 lh-copy f6" for="subject">Sujet</label>
+        <input class="pa2 input-reset ba bg-transparent w-100" type="text" name="subject" id="subject" required>
       </div>
-    </article>
-  </a>
-  <a href="http://www.cinemascope.ch/" class="link black">
-    <article class="w-100 w-50-ns center fl pa2-ns">
-      <img src="/img/educasuisse-cinemascope.jpg" class="db w-100" alt="Cinemascope">
-      <div class="ph2 ph0-ns pb3">
-        <h1 class="f5 f4-ns mb0">Cinemascope</h1>
+      <div class="mt3">
+        <label class="db fw4 lh-copy f6" for="query">Message</label>
+        <textarea class="pa2 input-reset ba bg-transparent w-100" rows="4" cols="50" name="query" id="query" required></textarea>
       </div>
-    </article>
-  </a>
-</section>
+    </fieldset>
+    <div class="mt3">
+      <input class="b ph3 pv2 input-reset ba b--black bg-transparent grow pointer f6" type="submit" value="Envoyer">
+    </div>
+  </form>
+
+  {% include contact.html %}
+
+</main>

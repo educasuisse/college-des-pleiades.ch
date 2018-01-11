@@ -1,6 +1,6 @@
-# Educasuisse.ch
+# college-des-pleiades.ch
 
-This repository contain the website for [Educasuisse](https://educasuisse.ch/).
+This repository contain the website for [Collège des Pléiades](https://college-des-pleiades.ch).
 
 It is based on [Jekyll](https://jekyllrb.com/).
 
@@ -9,8 +9,8 @@ It is based on [Jekyll](https://jekyllrb.com/).
 First of all, you can clone the repository:
 
 ```sh
-git clone git@github.com:educasuisse/educasuisse.ch.git
-cd educasuisse.ch
+git clone git@github.com:educasuisse/college-des-pleiades.ch.git
+cd college-des-pleiades.ch
 jekyll serve
 open http://localhost:4000/
 ```
